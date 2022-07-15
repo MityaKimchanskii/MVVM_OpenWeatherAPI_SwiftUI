@@ -11,6 +11,9 @@
 		3B8C9AEC288135B5002C8249 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8C9AEB288135B5002C8249 /* ContentView.swift */; };
 		3B8C9AEE288135B6002C8249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8C9AED288135B6002C8249 /* Assets.xcassets */; };
 		3B8C9AF1288135B6002C8249 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8C9AF0288135B6002C8249 /* Preview Assets.xcassets */; };
+		3B8C9AFB288136A3002C8249 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8C9AFA288136A3002C8249 /* Weather.swift */; };
+		3B8C9AFE288136D9002C8249 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8C9AFD288136D9002C8249 /* WeatherViewModel.swift */; };
+		3B8C9B0128813711002C8249 /* WeatherSercices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8C9B0028813711002C8249 /* WeatherSercices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		3B8C9AEB288135B5002C8249 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B8C9AED288135B6002C8249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B8C9AF0288135B6002C8249 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B8C9AFA288136A3002C8249 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		3B8C9AFD288136D9002C8249 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		3B8C9B0028813711002C8249 /* WeatherSercices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSercices.swift; sourceTree = "<group>"; };
+		3B8C9B02288138B5002C8249 /* MVVM-OpenWeatherAPI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MVVM-OpenWeatherAPI-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,10 @@
 		3B8C9AE8288135B5002C8249 /* MVVM_OpenWeatherAPI */ = {
 			isa = PBXGroup;
 			children = (
+				3B8C9B02288138B5002C8249 /* MVVM-OpenWeatherAPI-Info.plist */,
+				3B8C9AFF288136FD002C8249 /* Services */,
+				3B8C9AFC288136C8002C8249 /* View Model */,
+				3B8C9AF92881368B002C8249 /* Model */,
 				3B8C9AE9288135B5002C8249 /* MVVM_OpenWeatherAPIApp.swift */,
 				3B8C9AEB288135B5002C8249 /* ContentView.swift */,
 				3B8C9AED288135B6002C8249 /* Assets.xcassets */,
@@ -65,6 +76,30 @@
 				3B8C9AF0288135B6002C8249 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3B8C9AF92881368B002C8249 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B8C9AFA288136A3002C8249 /* Weather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B8C9AFC288136C8002C8249 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B8C9AFD288136D9002C8249 /* WeatherViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		3B8C9AFF288136FD002C8249 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3B8C9B0028813711002C8249 /* WeatherSercices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8C9B0128813711002C8249 /* WeatherSercices.swift in Sources */,
+				3B8C9AFE288136D9002C8249 /* WeatherViewModel.swift in Sources */,
 				3B8C9AEC288135B5002C8249 /* ContentView.swift in Sources */,
+				3B8C9AFB288136A3002C8249 /* Weather.swift in Sources */,
 				3B8C9AEA288135B5002C8249 /* MVVM_OpenWeatherAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +308,7 @@
 				DEVELOPMENT_TEAM = G3VP62JDQQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MVVM-OpenWeatherAPI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +338,7 @@
 				DEVELOPMENT_TEAM = G3VP62JDQQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MVVM-OpenWeatherAPI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
